@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 
 function afficherASCII() {
     console.clear(); 
-    console.log("\x1b[31m ██████╗███████╗██╗  ██╗   ██████╗ ███████╗");
+    console.log(" \x1b[31m ██████╗███████╗██╗  ██╗   ██████╗ ███████╗");
     console.log(" ██╔════╝██╔════╝╚██╗██╔╝   ██╔══██╗██╔════╝");
     console.log(" ██║     █████╗   ╚███╔╝    ██████╔╝█████╗  ");
     console.log(" ██║     ██╔══╝   ██╔██╗    ██╔══██╗██╔══╝  ");
@@ -44,7 +44,7 @@ function estIPValide(ip) {
 }
 
 async function rechercherIP() {
-    rl.question("\x1b[37mEntrez l'adresse IP CFX.re du serveur (ex: cfx.re/join/XXXXXX ou XXXXXX) : \x1b[0m", async (input) => {
+    rl.question("\x1b[37mEntrez l'adresse cfx.re : \x1b[0m", async (input) => {
         let url;
 
         if (input.startsWith("cfx.re/join/")) {
